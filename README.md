@@ -50,7 +50,7 @@ Example
 =======
 
     $ sudo ./update-golang.sh
-    update-golang.sh: version 0.8
+    update-golang.sh: version 0.12
     update-golang.sh: user: uid=0(root) gid=0(root) groups=0(root)
     update-golang.sh: SOURCE=https://storage.googleapis.com/golang
     update-golang.sh: DESTINATION=/usr/local
