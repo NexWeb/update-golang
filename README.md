@@ -64,7 +64,7 @@ Example
     update-golang.sh: DEBUG=
     update-golang.sh: will install golang go1.9.2.linux-amd64 as: /usr/local/go
     update-golang.sh: https://storage.googleapis.com/golang/go1.8.3.linux-amd64.tar.gz is remote
-    --2017-06-26 17:56:13--  https://storage.googleapis.com/golang/go1.8.3.linux-amd64.tar.gz
+    --2017-10-26 17:56:13--  https://storage.googleapis.com/golang/go1.8.3.linux-amd64.tar.gz
     Resolving storage.googleapis.com (storage.googleapis.com)... 172.217.29.176
     Connecting to storage.googleapis.com (storage.googleapis.com)|172.217.29.176|:443... connected.
     HTTP request sent, awaiting response... 200 OK
