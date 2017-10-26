@@ -73,7 +73,7 @@ Example
 
     /usr/local/go1.9.2.linux-amd64.tar.gz  100%[=========================================================================>]  98.86M  11.3MB/s    in 8.3s
 
-    2017-06-26 17:56:22 (10.4 MB/s) - ‘/usr/local/go1.8.3.linux-amd64.tar.gz’ saved [90029041/90029041]
+    2017-10-26 17:56:22 (10.4 MB/s) - ‘/usr/local/go1.9.2.linux-amd64.tar.gz’ saved [90029041/90029041]
 
     update-golang.sh: remove_old_link: found symlink for old install: /usr/local/go1.9.1.linux-amd64
     update-golang.sh: untar: tar -x -f /usr/local/go1.9.2.linux-amd64.tar.gz
