@@ -68,22 +68,21 @@ Example
     Resolving storage.googleapis.com (storage.googleapis.com)... 172.217.29.176
     Connecting to storage.googleapis.com (storage.googleapis.com)|172.217.29.176|:443... connected.
     HTTP request sent, awaiting response... 200 OK
-    Length: 90029041 (86M) [application/x-gzip]
+    Length: 90029041 (98M) [application/x-gzip]
     Saving to: ‘/usr/local/go1.9.2.linux-amd64.tar.gz’
 
-    /usr/local/go1.9.2.linux-amd64.tar.gz  100%[=========================================================================>]  85.86M  11.3MB/s    in 8.3s
+    /usr/local/go1.9.2.linux-amd64.tar.gz  100%[=========================================================================>]  98.86M  11.3MB/s    in 8.3s
 
     2017-06-26 17:56:22 (10.4 MB/s) - ‘/usr/local/go1.8.3.linux-amd64.tar.gz’ saved [90029041/90029041]
 
-    update-golang.sh: remove_old_link: found symlink for old install: /usr/local/go1.8.3.linux-amd64
-    update-golang.sh: untar: rm_dir /usr/local/go1.8.3.linux-amd64
-    update-golang.sh: untar: tar -x -f /usr/local/go1.8.3.linux-amd64.tar.gz
+    update-golang.sh: remove_old_link: found symlink for old install: /usr/local/go1.9.1.linux-amd64
+    update-golang.sh: untar: tar -x -f /usr/local/go1.9.2.linux-amd64.tar.gz
     update-golang.sh: path: removing old settings from: /etc/profile.d/golang_path.sh
     update-golang.sh: path: issuing new /usr/local/go/bin to /etc/profile.d/golang_path.sh
     update-golang.sh: path: issuing /home/lab/go/bin to /etc/profile.d/golang_path.sh
-    update-golang.sh: golang go1.8.3.linux-amd64 installed at: /usr/local/go
+    update-golang.sh: golang go1.9.2.linux-amd64 installed at: /usr/local/go
     update-golang.sh: testing: /usr/local/go/bin/go version
-    update-golang.sh: go version go1.8.3 linux/amd64
+    update-golang.sh: go version go1.9.2 linux/amd64
     update-golang.sh: /usr/local/go/bin/go version: SUCCESS
     update-golang.sh: testing: /usr/local/go/bin/go run /tmp/hello-tmpkm4kq4dB.go
     update-golang.sh: hello, world
@@ -110,7 +109,7 @@ These environment variables are available for customization:
 
 Example:
 
-    $ sudo RELEASE=1.9beta1 ./update-golang.sh
+    $ sudo RELEASE=1.9.2 ./update-golang.sh
 
 Per-user Install
 ================
