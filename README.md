@@ -1,6 +1,5 @@
-[![license](http://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/udhos/update-golang/blob/master/LICENSE)
-[![Travis Build Status](https://travis-ci.org/udhos/update-golang.svg?branch=master)](https://travis-ci.org/udhos/update-golang)
-[![asciicast](https://asciinema.org/a/660zn8wdnjzriy1ac0cqa7mou.png)](https://asciinema.org/a/660zn8wdnjzriy1ac0cqa7mou)
+[![license](http://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/NexWeb/update-golang/blob/master/LICENSE)
+
 
 # update-golang
 update-golang is a script to easily fetch and install new Golang releases with minimum system intrusion.
@@ -15,7 +14,6 @@ Table of Contents
   * [Customization](#customization)
   * [Per\-user Install](#per-user-install)
 
-Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 
 How it works
 ============
@@ -35,7 +33,7 @@ You can customize the behavior by setting environment variables (see Customizati
 Usage
 =====
 
-    git clone https://github.com/udhos/update-golang
+    git clone https://github.com/NexWeb/update-golang
     cd update-golang
     sudo ./update-golang.sh
 
@@ -44,7 +42,7 @@ Caution
 
 Before running the script, make sure you have an untampered copy by verifying the SHA256 checksum.
 
-    $ wget -qO hash.txt https://raw.githubusercontent.com/udhos/update-golang/master/update-golang.sh.sha256
+    $ wget -qO hash.txt https://github.com/NexWeb/update-golang/blob/master/update-golang.sh.sha256
     $ sha256sum -c hash.txt
     update-golang.sh: OK
 
@@ -56,7 +54,7 @@ Example
     update-golang.sh: user: uid=0(root) gid=0(root) groups=0(root)
     update-golang.sh: SOURCE=https://storage.googleapis.com/golang
     update-golang.sh: DESTINATION=/usr/local
-    update-golang.sh: RELEASE=1.8.3
+    update-golang.sh: RELEASE=1.9.2
     update-golang.sh: OS=linux
     update-golang.sh: ARCH_PROBE=uname -m
     update-golang.sh: ARCH=amd64
@@ -64,16 +62,16 @@ Example
     update-golang.sh: CACHE=/usr/local
     update-golang.sh: GOPATH=
     update-golang.sh: DEBUG=
-    update-golang.sh: will install golang go1.8.3.linux-amd64 as: /usr/local/go
+    update-golang.sh: will install golang go1.9.2.linux-amd64 as: /usr/local/go
     update-golang.sh: https://storage.googleapis.com/golang/go1.8.3.linux-amd64.tar.gz is remote
     --2017-06-26 17:56:13--  https://storage.googleapis.com/golang/go1.8.3.linux-amd64.tar.gz
     Resolving storage.googleapis.com (storage.googleapis.com)... 172.217.29.176
     Connecting to storage.googleapis.com (storage.googleapis.com)|172.217.29.176|:443... connected.
     HTTP request sent, awaiting response... 200 OK
     Length: 90029041 (86M) [application/x-gzip]
-    Saving to: ‘/usr/local/go1.8.3.linux-amd64.tar.gz’
+    Saving to: ‘/usr/local/go1.9.2.linux-amd64.tar.gz’
 
-    /usr/local/go1.8.3.linux-amd64.tar.gz  100%[=========================================================================>]  85.86M  11.3MB/s    in 8.3s
+    /usr/local/go1.9.2.linux-amd64.tar.gz  100%[=========================================================================>]  85.86M  11.3MB/s    in 8.3s
 
     2017-06-26 17:56:22 (10.4 MB/s) - ‘/usr/local/go1.8.3.linux-amd64.tar.gz’ saved [90029041/90029041]
 
@@ -100,7 +98,7 @@ These environment variables are available for customization:
 
     SOURCE=https://storage.googleapis.com/golang ;# download location
     DESTINATION=/usr/local                       ;# install destination
-    RELEASE=1.8.3                                ;# golang release
+    RELEASE=1.9.2                                ;# golang release
     OS=linux                                     ;# os
     ARCH_PROBE=uname -m                          ;# arch detection
     ARCH=amd64                                   ;# arch
