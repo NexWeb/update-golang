@@ -6,7 +6,7 @@
 #
 # PIPETHIS_AUTHOR udhos
 
-version=0.12
+version=0.14
 
 set -o pipefail
 
@@ -28,7 +28,7 @@ log_stdin() {
 # defaults
 source=https://storage.googleapis.com/golang
 destination=/usr/local
-release=1.9.2
+release=1.10
 profiled=/etc/profile.d/golang_path.sh
 arch_probe="uname -m"
 
