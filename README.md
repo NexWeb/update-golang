@@ -54,7 +54,7 @@ Example
     update-golang.sh: user: uid=0(root) gid=0(root) groups=0(root)
     update-golang.sh: SOURCE=https://storage.googleapis.com/golang
     update-golang.sh: DESTINATION=/usr/local
-    update-golang.sh: RELEASE=1.9.2
+    update-golang.sh: RELEASE=1.9.4
     update-golang.sh: OS=linux
     update-golang.sh: ARCH_PROBE=uname -m
     update-golang.sh: ARCH=amd64
@@ -62,14 +62,14 @@ Example
     update-golang.sh: CACHE=/usr/local
     update-golang.sh: GOPATH=
     update-golang.sh: DEBUG=
-    update-golang.sh: will install golang go1.9.2.linux-amd64 as: /usr/local/go
+    update-golang.sh: will install golang go1.9.4.linux-amd64 as: /usr/local/go
     update-golang.sh: https://storage.googleapis.com/golang/go1.8.3.linux-amd64.tar.gz is remote
     --2017-10-26 17:56:13--  https://storage.googleapis.com/golang/go1.8.3.linux-amd64.tar.gz
     Resolving storage.googleapis.com (storage.googleapis.com)... 172.217.29.176
     Connecting to storage.googleapis.com (storage.googleapis.com)|172.217.29.176|:443... connected.
     HTTP request sent, awaiting response... 200 OK
     Length: 90029041 (98M) [application/x-gzip]
-    Saving to: ‘/usr/local/go1.9.2.linux-amd64.tar.gz’
+    Saving to: ‘/usr/local/go1.9.4.linux-amd64.tar.gz’
 
     /usr/local/go1.9.2.linux-amd64.tar.gz  100%[=========================================================================>]  98.86M  11.3MB/s    in 8.3s
 
@@ -80,9 +80,9 @@ Example
     update-golang.sh: path: removing old settings from: /etc/profile.d/golang_path.sh
     update-golang.sh: path: issuing new /usr/local/go/bin to /etc/profile.d/golang_path.sh
     update-golang.sh: path: issuing /home/lab/go/bin to /etc/profile.d/golang_path.sh
-    update-golang.sh: golang go1.9.2.linux-amd64 installed at: /usr/local/go
+    update-golang.sh: golang go1.9.4.linux-amd64 installed at: /usr/local/go
     update-golang.sh: testing: /usr/local/go/bin/go version
-    update-golang.sh: go version go1.9.2 linux/amd64
+    update-golang.sh: go version go1.9.4 linux/amd64
     update-golang.sh: /usr/local/go/bin/go version: SUCCESS
     update-golang.sh: testing: /usr/local/go/bin/go run /tmp/hello-tmpkm4kq4dB.go
     update-golang.sh: hello, world
@@ -97,7 +97,7 @@ These environment variables are available for customization:
 
     SOURCE=https://storage.googleapis.com/golang ;# download location
     DESTINATION=/usr/local                       ;# install destination
-    RELEASE=1.9.2                                ;# golang release
+    RELEASE=1.9.4                                ;# golang release
     OS=linux                                     ;# os
     ARCH_PROBE=uname -m                          ;# arch detection
     ARCH=amd64                                   ;# arch
@@ -109,7 +109,7 @@ These environment variables are available for customization:
 
 Example:
 
-    $ sudo RELEASE=1.9.2 ./update-golang.sh
+    $ sudo RELEASE=1.9.4 ./update-golang.sh
 
 Per-user Install
 ================
